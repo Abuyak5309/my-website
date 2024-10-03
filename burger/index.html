@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Hut</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="burlo2.jpg" alt="Burger Hut Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#specials">Specials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#order" class="cta">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Burger Hut</h1>
+            <p>Bite into Happiness – Delicious Burgers Crafted Just for You!</p>
+            <a href="#menu" class="cta">Explore Our Menu</a>
+        </div>
+    </section>
+
+
+    <section class="featured-burgers">
+        <div class="container">
+            <h2>Featured Burgers</h2>
+            <div class="burger-grid">
+                <div class="burger-card">
+                    <img src="bur1.jpg" alt="Classic Burger">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy beef patty with lettuce, tomato, and our special sauce.</p>
+                    <span>$8.99</span>
+                </div>
+                <div class="burger-card">
+                    <img src="bur3.jpg" alt="Cheese Deluxe">
+                    <h3>Cheese Deluxe</h3>
+                    <p>Double cheese, crispy bacon, and caramelized onions.</p>
+                    <span>$10.49</span>
+                </div>
+                <div class="burger-card">
+                    <img src="bur4.jpg" alt="Spicy BBQ">
+                    <h3>Spicy BBQ</h3>
+                    <p>Spicy BBQ sauce with jalapenos and pepper jack cheese.</p>
+                    <span>$9.99</span>
+                </div>
+                <div class="burger-card">
+                    <img src="bur2.jpg" alt="Veggie Delight">
+                    <h3>Veggie Delight</h3>
+                    <p>Grilled vegetables and a savory veggie patty.</p>
+                    <span>$7.49</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specials-promotions">
+        <div class="container">
+            <h2>Specials & Promotions</h2>
+            <div class="specials-grid">
+                <div class="special-card">
+                    <h3>Buy One Get One Free</h3>
+                    <p>Get a free burger with the purchase of any burger. Limited time only!</p>
+                    <span class="validity">Valid until: September 30, 2024</span>
+                </div>
+                <div class="special-card">
+                    <h3>10% Off All Combos</h3>
+                    <p>Enjoy 10% off on all burger and fries combos. No coupon needed.</p>
+                    <span class="validity">Valid until: October 15, 2024</span>
+                </div>
+                <div class="special-card">
+                    <h3>Free Dessert with Every Meal</h3>
+                    <p>Get a free dessert with every meal purchase. Choose from our delicious options.</p>
+                    <span class="validity">Valid until: October 5, 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Welcome to Burger Hut, where passion meets the plate. Since 2020, we’ve been serving up juicy, handcrafted burgers made from the freshest ingredients. Our mission is simple: to provide a delicious experience with every bite. Our dedicated team takes pride in creating gourmet burgers that keep you coming back for more.</p>
+                    <p>At Burger Hut, we believe in quality, flavor, and community. Join us in savoring our signature creations or customizing your own burger masterpiece. Thank you for being a part of our journey!</p>
+                </div>
+                <div class="about-image">
+                    <img src="burlo3.jpg" alt="Our Team">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"The best burger I've ever had! The flavors are amazing, and the service is top-notch. Highly recommend!"</p>
+                    <span class="customer-name">John Doe</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I love the variety of burgers and the quality of the ingredients. Every visit is a new and delightful experience."</p>
+                    <span class="customer-name">Jane Smith</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Great atmosphere and even better food. The staff is friendly and always makes you feel welcome."</p>
+                    <span class="customer-name">Emily Johnson</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Fantastic place for a burger craving! The portions are generous, and the flavors are always spot-on."</p>
+                    <span class="customer-name">Michael Brown</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="interactive-menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn" data-category="burgers">Burgers</button>
+                <button class="category-btn" data-category="sides">Sides</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+            <div class="menu-items" id="menu-items">
+                <!-- Items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Sample data for menu items
+        const menuData = {
+            burgers: [
+                { name: 'Classic Burger', description: 'Juicy beef patty with lettuce, tomato, and our special sauce.', price: '$8.99' },
+                { name: 'Cheese Deluxe', description: 'Double cheese, crispy bacon, and caramelized onions.', price: '$10.49' }
+            ],
+            sides: [
+                { name: 'Fries', description: 'Crispy golden fries with a touch of salt.', price: '$3.99' },
+                { name: 'Onion Rings', description: 'Breaded and fried onion rings with dipping sauce.', price: '$4.49' }
+            ],
+            drinks: [
+                { name: 'Soda', description: 'Choose from a variety of sodas.', price: '$1.99' },
+                { name: 'Milkshake', description: 'Rich and creamy milkshakes in various flavors.', price: '$4.99' }
+            ],
+            desserts: [
+                { name: 'Chocolate Cake', description: 'Decadent chocolate cake with a rich frosting.', price: '$5.49' },
+                { name: 'Apple Pie', description: 'Warm apple pie with a cinnamon crust.', price: '$4.99' }
+            ]
+        };
+
+        // Function to load menu items based on category
+        function loadMenuItems(category) {
+            const menuItemsContainer = document.getElementById('menu-items');
+            menuItemsContainer.innerHTML = '';
+
+            menuData[category].forEach(item => {
+                const itemElement = document.createElement('div');
+                itemElement.classList.add('menu-item');
+                itemElement.innerHTML = `
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                    <span class="price">${item.price}</span>
+                `;
+                menuItemsContainer.appendChild(itemElement);
+            });
+        }
+
+        // Event listener for category buttons
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', (event) => {
+                const category = event.target.getAttribute('data-category');
+                loadMenuItems(category);
+            });
+        });
+
+        // Load default category on page load
+        loadMenuItems('burgers');
+    </script>
+
+<section class="map-location">
+    <div class="container">
+        <h2>Find Us</h2>
+        
+            </div>
+            <div class="location-info">
+                <h3>Burger Hut</h3>
+                <p>123 Tasty Lane<br>Flavor Town, FT 45678</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@burgerhut.com</p>
+                <p>Hours: Mon - Sun: 11:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Other sections of the website -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h1>Burger Hut</h1>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <p>123 Tasty Lane, Flavor Town, FT 45678</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@burgerhut.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fa fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Burger Hut. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Font Awesome for social icons -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+    <!-- Other sections of the website -->
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <h2>Stay Updated!</h2>
+            <p>Sign up for our newsletter and be the first to know about our latest promotions and offers.</p>
+            <form class="signup-form">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>Special Offer!</h2>
+            <p>Get 20% off your first order when you sign up today. Don’t miss out!</p>
+            <a href="#" class="cta-button">Claim Your Discount</a>
+        </div>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🎉 New Menu Items Available! Come and try our latest creations! 🎉</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Footer content as previously defined -->
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

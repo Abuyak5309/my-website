@@ -1,0 +1,651 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto sans', sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1c1c1c; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust logo size as needed */
+    border-radius: 50%;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    margin: 0 15px;
+}
+
+.nav a {
+    color: #f0f0f0; /* Light text color */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ff9f00; /* Highlight color on hover */
+}
+
+.cta {
+    background-color: #ff9f00; /* Call-to-action button color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #1c1c1c; /* Dark text color */
+    font-weight: bold;
+}
+
+.cta:hover {
+    background-color: #e68a00; /* Slightly darker on hover */
+}
+/* Hero Section Styles */
+.hero {
+    background: url('bur1.jpg') no-repeat center center/cover; /* Background image */
+    color: #f0f0f0; /* Light text color */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    max-width: 800px; /* Limit width of content */
+}
+
+.hero h1 {
+    font-size: 4rem; /* Large headline */
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Subheadline size */
+    margin-bottom: 30px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+}
+
+.cta {
+    background-color: #ff9f00; /* Button color */
+    color: #1c1c1c; /* Dark text color */
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #e68a00; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly scale button on hover */
+}
+
+/* Featured Burgers Section Styles */
+.featured-burgers {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.featured-burgers h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 40px;
+}
+
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.burger-card {
+    background-color: #1c1c1c; /* Dark background for cards */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.burger-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ff9f00; /* Accent color border */
+}
+
+.burger-card h3 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    color: #f0f0f0;
+}
+
+.burger-card p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #ccc;
+}
+
+.burger-card span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9f00; /* Accent color */
+    margin-top: 10px;
+}
+
+.burger-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+
+/* Specials and Promotions Section Styles */
+.specials-promotions {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.specials-promotions h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 40px;
+}
+
+.specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.special-card {
+    background-color: #1c1c1c; /* Dark background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+.special-card h3 {
+    font-size: 1.8rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 15px;
+}
+
+.special-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.special-card .validity {
+    display: block;
+    font-size: 0.9rem;
+    color: #f0f0f0; /* Light text color */
+    margin-top: 10px;
+}
+
+.special-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* About Us Section Styles */
+.about-us {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    max-width: 800px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc; /* Light text color */
+    margin: 0 0 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 600px; /* Limit image width */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-text {
+        max-width: 50%;
+    }
+
+    .about-image {
+        max-width: 50%;
+    }
+}
+/* Testimonials Section Styles */
+.testimonials {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 40px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimonial-card {
+    background-color: #1c1c1c; /* Dark background for cards */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #ccc; /* Light text color */
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.customer-name {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff9f00; /* Accent color */
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+/* Interactive Menu Section Styles */
+.interactive-menu {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.interactive-menu h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 30px;
+}
+
+.menu-categories {
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    background-color: #1c1c1c; /* Dark button background */
+    color: #f0f0f0; /* Light text color */
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.category-btn:hover {
+    background-color: #ff9f00; /* Highlight color on hover */
+    color: #1c1c1c; /* Dark text color on hover */
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #1c1c1c; /* Dark background for menu items */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    text-align: center;
+}
+
+.menu-item h3 {
+    font-size: 1.8rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #ccc; /* Light text color */
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff9f00; /* Accent color */
+}
+/* Map and Location Section Styles */
+.map-location {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.map-location h2 {
+    font-size: 2.5rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 30px;
+}
+
+.map-and-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 800px; /* Limit the width of the map */
+}
+
+.location-info {
+    background-color: #1c1c1c; /* Dark background for info */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    color: #f0f0f0;
+}
+
+.location-info h3 {
+    font-size: 2rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 15px;
+}
+
+.location-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #ccc; /* Light text color */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .map-and-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .map-container {
+        width: 60%;
+    }
+
+    .location-info {
+        width: 35%;
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c2c2c; /* Dark background for the footer */
+    padding: 40px 20px;
+    color: #f0f0f0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo h1 {
+    font-size: 2rem;
+    color: #ff9f00; /* Accent color */
+    margin: 0;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff9f00; /* Accent color on hover */
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social .social-icon {
+    color: #f0f0f0;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icon:hover {
+    color: #ff9f00; /* Accent color on hover */
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #ccc; /* Light text color */
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-logo {
+        flex: 1;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-social {
+        flex: 1;
+        margin: 0 10px;
+    }
+}
+/* Newsletter Signup Section Styles */
+.newsletter-signup {
+    background-color: #2c2c2c; /* Dark background for the section */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.newsletter-signup h2 {
+    font-size: 2rem;
+    color: #ff9f00; /* Accent color */
+    margin-bottom: 15px;
+}
+
+.newsletter-signup p {
+    font-size: 1rem;
+    color: #ccc; /* Light text color */
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.signup-form input {
+    background-color: #1c1c1c; /* Dark background for input */
+    border: 1px solid #333; /* Slightly lighter border */
+    color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-form button {
+    background-color: #ff9f00; /* Accent color */
+    border: none;
+    color: #1c1c1c; /* Dark text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #e68900; /* Slightly darker shade on hover */
+}
+
+/* Call-to-Action Banner Styles */
+.cta-banner {
+    background-color: #1c1c1c; /* Dark background for the banner */
+    color: #ff9f00; /* Accent color */
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.cta-banner h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cta-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #ff9f00; /* Accent color */
+    color: #1c1c1c; /* Dark text color */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68900; /* Slightly darker shade on hover */
+}
+
+/* Announcement Bar Styles */
+.announcement-bar {
+    background-color: #333; /* Darker background for the announcement */
+    color: #ff9f00; /* Accent color */
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .newsletter-signup, .cta-banner {
+        padding: 60px 20px;
+    }
+}
